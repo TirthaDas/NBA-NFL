@@ -1,0 +1,718 @@
+body{
+	margin:0;
+	padding:0;
+}
+
+.pageHeader{
+	height: 350px;
+	margin:0;
+	padding: 0;
+	position: relative;
+    text-align: center;
+    color: pink;
+    overflow: hidden;
+    width: 100%;
+}
+.pageHeader img{
+	width: 100%;
+
+}
+#navigationWapper{
+	/*position: sticky;*/
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+#navigationWapper{
+	font-size: 15px;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+   /* position: fixed;*/
+    /*top: 1;*/
+    width: 100%;
+    /*padding-left: 25em;*/
+    /*left: 50%;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+#navigationWapper a{
+	/*width: 100px;*/
+	height: 30px;
+	padding: 20px;
+	/*display: block;*/
+	font-size: x-large;
+    color: white;
+    text-align: center;
+    /*padding: 14px 16px;*/
+    text-decoration: none;
+    /*width: 5em;*/
+
+}
+#navigationWapper #active1 {
+	color: red;
+}
+#navigationWapper a:hover {
+    background-color: #111;}
+
+p {
+    font-family: "Times New Roman", Georgia, Serif;
+}
+.aboutUsWrapper{
+
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-direction: row;
+}
+.aboutUsText{
+	padding: 60px;
+
+}
+.aboutUsText h2{
+	text-align: center;
+}
+.aboutUsText p{
+	font-size: large;
+}
+.aboutUsImage{
+	margin: 40px;
+}
+#PosterOne{
+	width: 100%;
+	height: 500px;
+	padding-top: 30px;
+	overflow: hidden;
+}
+#firstposter{
+	width: 100%;
+	height: 500px;
+	/*padding-top: 30px;*/
+	overflow:hidden;
+
+}
+#firstposter img{
+	width: 100%;
+	
+}
+#PosterOne img{
+	width: 100%;
+}
+#teamResults{
+	 display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-direction: row;
+}
+#teamResults p{
+	padding: 60px;
+	font-size: large;
+}
+#trialTxt {
+	padding: 30px;
+}
+#teamResults img{
+	padding: 40px;
+}
+.abc{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    /*position: sticky;*/
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+   /* position: fixed;*/
+    /*top: 1;*/
+    width: 100%;
+    /*padding-left: 25em;*/
+    left: 50%;
+
+
+}
+li {
+   /* display: inline;*/
+    /*float: left;*/
+
+   
+}
+li a {
+   
+   
+    /*background-color: #dddddd;*/
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    width: 5em;
+}
+li a:hover {
+    background-color: #111;
+
+}
+.active{
+	color: #4286f4;
+}
+
+/*.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+.sticky + .content {
+  padding-top: 60px;
+}*/
+.trialTextOverImgWrapper{
+	width: 100%;
+	height: auto;
+}
+
+.imgWrapper {
+   
+    text-align: center;
+    color: white;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+/*.trialTxt p{
+	height: 0px;
+	overflow: hidden;
+}*/
+#teamRstl {
+	
+	 display: flex;
+    /*
+    ;
+    overflow: hidden;*/
+    flex-direction: column;
+    vertical-align: middle;
+	align-items: center;
+    justify-content: center
+}
+/*#btn1{
+	display: block;
+}*/
+#slctn{
+	/*display: block;*/
+	height: 0px;
+	overflow: hidden;
+	-moz-transition:all .5s linear;
+	-webkit-transition:all .5s linear;
+	-o-transition:all .5s linear;
+	transition:all .5s linear;
+}
+#collps{
+	width: 100%;
+}
+#slctn{
+	display: flex;
+
+	align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+#btn1{
+	background-color: transparent;
+	outline: none;
+	border: none;
+	width: 100px;
+	height: 80px;
+	font-size: 16px;
+
+}
+
+#btn1:hover{
+	cursor: pointer;
+}
+#btn2{
+	background-color: transparent;
+	outline: none;
+	border: none;
+	width: 100px;
+	height: 80px;
+	font-size: 16px;
+}
+#btn2:hover{
+	cursor: pointer;
+}
+#slct2{
+	overflow: auto;
+
+	height: 40px;
+	width: 110px;
+	font-size: large;
+	/*display: contents;*/
+	margin: 50px 20px;
+	display: block;
+	padding: 2px 2px 2px 2px;
+	border: 2px solid #fff;
+	border-radius: 3px;
+	background-color: #222;
+	
+
+	color: #fff;
+}
+#slct3 {
+	height: 40px;
+	width: 110px;
+	font-size: large;
+	display: block;
+	margin: 50px 20px;
+	border: 2px solid #fff;
+	border-radius: 3px;
+	padding: 2px 2px 2px 2px;
+	background-color: #222;
+	color: #fff;
+	
+}
+#slct1 {
+	height: 40px;
+	width: 110px;
+	font-size: large;
+	display: block;
+	margin: 50px 20px;
+	border: 2px solid #fff;
+	border-radius: 3px;
+	padding: 2px 2px 2px 2px;
+	background-color: #222;
+	color: #fff;
+
+}
+#n{
+	height: 40px;
+	width: 110px;
+	font-size: large;
+	}
+#nflPlayer{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-direction: row;
+}
+#nflPlayer p{
+	padding: 60px;
+	font-size: large;
+}
+#nflPlayerTxt {
+	padding: 30px;
+}
+#nflPlayer img{
+	padding: 40px;
+}
+#playerrslt{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	 display: flex;
+    
+    flex-direction: column;
+    vertical-align: middle;
+	align-items: center;
+    justify-content: center
+}
+#slctn1 {
+	height: 0px;
+	overflow: hidden;
+	-moz-transition:all .5s linear;
+	-webkit-transition:all .5s linear;
+	-o-transition:all .5s linear;
+	transition:all .5s linear;
+	display: flex;
+
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+#slctn1 input[type=text]{
+	padding: 6px;
+	margin-top: 8px;
+	font-size: 17px;
+	border: none;
+	background: #c7d5ed;
+	margin-left: 4px;
+	margin right: 4px;
+}
+
+#slctn1  button{
+	float: center;
+	padding: 6px 10px;
+	margin-top: 8px;
+	margin-left: 4px;
+	background: #5b90e5;
+	font-size: 17px;
+	border: none;
+	cursor: pointer;
+
+}
+#slctn1 button:hover{
+	background: #ccc;
+}
+footer{
+	margin-top: 30px;
+	width: 100%;
+}
+footer img{
+	
+	width: 100%;
+	height: 300px;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+/*trial for slideshow*/
+
+
+/** {box-sizing: border-box;}*/
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+/*img {vertical-align: middle;}*/
+
+/* Slideshow container */
+.slideshow-container {
+	max-width: 100%;
+	position: relative;
+	margin: auto;
+}
+
+/* Caption text */
+.text {
+	color: #f2f2f2;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+/*.active {
+  background-color: #717171;
+}*/
+
+/* Fading animation */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+
+@keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+
+
+#websname{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*background-color: #c1c1bb;*/
+	/*background-color: #61c8f4;*/
+	background-color: #c9e4ef;
+}
+h1{
+	text-decoration-color: red;
+}
+
+@media only screen and (max-width:1050px){
+
+	#firstposter{
+		height: auto;
+	}
+	/*.aboutUsText{
+		margin-left: 120px;
+		padding: 0;
+	}*/
+	#trialTxt p{
+		
+		padding: 0;
+	}
+	#nflPlayerTxt p{
+
+		padding: 0;
+	}
+}
+
+@media only screen and (max-width:850px){
+	#navigationWapper{
+		flex-direction: column;
+		position: relative;
+		
+		overflow: hidden;
+	}
+	#navigationWapper a{
+		font-size: x-large;
+		}
+	.aboutUsText{
+		padding-left: 30px;
+		padding-right: 0px;
+	}
+	/*.aboutUsImage img{
+		margin-right: 60px;
+	}*/
+	#teamResults img {
+		padding: 0;
+	}
+	#trialTxt{
+		padding-left: 30px;
+		padding-right: 0px;
+	}
+	#trialTxt img{
+		padding: 0;
+	}
+
+	#nflPlayerTxt{
+		padding-left: 0px;
+		padding-right: 30px;	
+	}
+	#nflPlayerImg{
+		padding: 0;	
+	}
+	#nflPlayerImg img{
+		padding: 0;	
+	}
+
+
+	#nflPlayerTxt p{
+		padding:0;
+	}
+@media only screen and (max-width:750px){
+	.aboutUsWrapper{
+		display: flex;
+		flex-direction: column;
+	}
+	.aboutUsText{
+		padding-left: 60px;
+		padding-right: 60px;
+		padding-bottom: 10px;
+	}
+	#PosterOne{
+		height: auto;
+	}
+	#teamResults{
+		display: flex;
+		flex-direction: column;
+	}
+	#trialTxt{
+		padding-left: 60px;
+		padding-right: 60px;
+		padding-bottom: 10px;
+	}
+	#trialTxt p{
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+
+	#nflPlayer{
+		display: flex;
+		flex-direction: column;
+	}
+	#nflPlayerTxt{
+		padding-left: 60px;
+		padding-right: 60px;
+		padding-bottom: 10px;
+
+	}
+	#nflPlayerTxt p{
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+}
+
+@media only screen and (max-width:650px){
+	.pageHeader{
+		height: 250px;
+	}#slctn1 input[type=text]{
+		width: 90px;
+		font-size: medium;
+	}
+	#n{
+		height: 30px;
+		width: 40px;
+		font-size: medium;
+	}
+	#slct1{
+		height: 30px;
+		width: 70px;
+		font-size: medium;
+	}
+	#slct2{
+		height: 30px;
+		width: 70px;
+		font-size: medium;
+	}
+	#slct3{
+		height: 30px;
+		width: 70px;
+		font-size: medium;
+	}
+}
+
+@media only screen and (max-width:450px){
+
+	.pageHeader{
+		height: 150px;
+	}
+	#navigationWapper a{
+		font-size: medium;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	#trialTxt{
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 10px;
+	}
+	#trialTxt p{
+		padding: 0;
+	}
+	#nflPlayerTxt p{
+		padding:0;
+	}
+	.aboutUsText{
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 10px;
+	}
+	#nflPlayerTxt{
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 10px;
+
+	}
+
+
+	#slct1{
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	#slct2{
+		
+		margin-left:  5px;
+		margin-right: 5px;
+	}
+	#slct3{
+		
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+
+	h1{
+		font-size: large;
+	}
+
+}
+
+@media only screen and (max-width:300px){
+	.text {font-size: 11px}
+	.pageHeader{
+		height: 100px;
+	}
+	#slctn1 input[type=text]{
+		width: 57px;
+		font-size: x-small;
+	}
+	#submiit {
+		width: 63px;
+		height: 25px;
+		font-size: xx-small;
+	}
+	#slct1{
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	#slct2{
+		margin-left:  0px;
+		margin-right: 0px;
+	}
+	#slct3{
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	h1{
+		font-size: medium;
+	}
+}
+@media only screen and (max-width: 250px){
+	#slct1{
+	width: 53px;
+	font-size: x-small;
+	}
+	#slct2{
+		
+		width: 50px;
+		font-size: x-small;
+	}
+	#slct3{
+		
+		width: 55px;
+		font-size: x-small;
+	}
+	#n{
+		height: 30px;
+		width: 30px;
+		font-size: x-small;
+	}
+}
+
+

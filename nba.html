@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Nba</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var val1='';
+		var val2='';
+		var val3='';
+		var xhttp = new XMLHttpRequest();
+		var xhttp1 = new XMLHttpRequest();
+		var xhttp2=new XMLHttpRequest();
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+    		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+       		 document.getElementById("myBtn").style.display = "block";
+    		} else {
+        	document.getElementById("myBtn").style.display = "none";
+    		}
+		}
+
+// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+    	document.body.scrollTop = 0; // For Safari
+    	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}
+		var name="";
+		var imgurl="";
+		var finalUrl="https://en.wikipedia.org/w/api.php?action=query&prop=extracts&format=json&indexpageids=&exintro=&explaintext=&titles=";
+		// <button textype="input" id=clck>Click Me!</button>
+		function getSelectedValue1(){
+			 val1=document.getElementById("slct1").value;
+			console.log(val1);
+		}
+
+		function getSelectedValue2(){
+			val2=document.getElementById("slct2").value;
+			console.log(val2);
+		}
+		
+		function getSelectedValue3(){
+			val3=document.getElementById("slct3").value;
+			console.log(val3);
+		}
+
+		window.onload=function(){
+			var b=false;
+			document.getElementById("btn1").onclick=function(){
+				if(b==false){
+					document.getElementById("slctn").style.height="50px";
+					b=true;
+					getSelectedValue1();
+					getSelectedValue2();
+					getSelectedValue3();
+				}else{
+					document.getElementById("slctn").style.height="0px";
+					b=false;
+				}
+			}
+			var a=false;
+			document.getElementById("btn2").onclick=function(){
+				if(a==false){
+					document.getElementById("slctn1").style.height="50px";
+					a=true;
+					}else{
+					document.getElementById("slctn1").style.height="0px";
+					a=false;
+				}
+			}
+
+			var submiit=document.getElementById("submiit");
+			submiit.addEventListener("click",function(){
+				var firstnm=document.getElementById("firstname").value;
+				var lastnm=document.getElementById("lastname").value;
+				location.href="nbaplayer.html"+"?"+"var1"+"="+firstnm+"&var2="+lastnm;				 
+				document.getElementById("firstname").value="";
+				document.getElementById("lastname").value="";		
+			});
+
+			var goBtn=document.getElementById('n');
+			goBtn.addEventListener("click",function()
+			{
+			location.href="nbaTeamResults.html"+"?"+"var1"+"="+val1+"&var2="+val2+"&var3="+val3;
+			document.getElementById("slct1").value="0";
+			document.getElementById("slct2").value="0";
+			document.getElementById("slct3").value="0";
+			console.log("aksdjas");
+			});
+		}
+	</script>
+	<header class="pageHeader">
+		<div class="slideshow-container">
+			<div class="mySlides fade">
+  				<div class="numbertext">1 / 3</div>
+				<img
+					sizes="(max-width: 1400px) 100vw, 1400px"
+					srcset="
+					images/nfl4_bnprio/nfl4_bnprio_c_scale,w_200.jpg 200w,
+					images/nfl4_bnprio/nfl4_bnprio_c_scale,w_446.jpg 446w,
+					images/nfl4_bnprio/nfl4_bnprio_c_scale,w_621.jpg 621w,
+					images/nfl4_bnprio/nfl4_bnprio_c_scale,w_800.jpg 800w,
+					images/nfl4_bnprio/nfl4_bnprio_c_scale,w_930.jpg 930w,
+					images/nfl4_bnprio/nfl4_bnprio_c_scale,w_1060.jpg 1060w,
+					images/nfl4_bnprio/nfl4_bnprio_c_scale,w_1187.jpg 1187w,
+					images/nfl4_bnprio/nfl4_bnprio_c_scale,w_1306.jpg 1306w,
+					images/nfl4_bnprio/nfl4_bnprio_c_scale,w_1383.jpg 1383w,
+					images/nfl4_bnprio/nfl4_bnprio_c_scale,w_1400.jpg 1400w"
+					src="images/nfl4_bnprio/nfl4_bnprio_c_scale,w_1400.jpg"
+					alt="nfl4" style="width:100%">
+  				<!-- <div class="text">Caption Text</div> -->
+			</div>
+			<div class="mySlides fade">
+  				<div class="numbertext">2 / 3</div>
+				<img
+					sizes="(max-width: 1024px) 100vw, 1024px"
+					srcset="
+					images/nba3_pvqh2d/nba3_pvqh2d_c_scale,w_200.jpg 200w,
+					images/nba3_pvqh2d/nba3_pvqh2d_c_scale,w_295.jpg 295w,
+					images/nba3_pvqh2d/nba3_pvqh2d_c_scale,w_372.jpg 372w,
+					images/nba3_pvqh2d/nba3_pvqh2d_c_scale,w_438.jpg 438w,
+					images/nba3_pvqh2d/nba3_pvqh2d_c_scale,w_499.jpg 499w,
+					images/nba3_pvqh2d/nba3_pvqh2d_c_scale,w_550.jpg 550w,
+					images/nba3_pvqh2d/nba3_pvqh2d_c_scale,w_604.jpg 604w,
+					images/nba3_pvqh2d/nba3_pvqh2d_c_scale,w_652.jpg 652w,
+					images/nba3_pvqh2d/nba3_pvqh2d_c_scale,w_738.jpg 738w,
+					images/nba3_pvqh2d/nba3_pvqh2d_c_scale,w_775.jpg 775w,
+					images/nba3_pvqh2d/nba3_pvqh2d_c_scale,w_819.jpg 819w,
+					images/nba3_pvqh2d/nba3_pvqh2d_c_scale,w_858.jpg 858w,
+					images/nba3_pvqh2d/nba3_pvqh2d_c_scale,w_894.jpg 894w,
+					images/nba3_pvqh2d/nba3_pvqh2d_c_scale,w_935.jpg 935w,
+					images/nba3_pvqh2d/nba3_pvqh2d_c_scale,w_975.jpg 975w,
+					images/nba3_pvqh2d/nba3_pvqh2d_c_scale,w_1023.jpg 1023w,
+					images/nba3_pvqh2d/nba3_pvqh2d_c_scale,w_1019.jpg 1019w,
+					images/nba3_pvqh2d/nba3_pvqh2d_c_scale,w_1024.jpg 1024w"
+					src="images/nba3_pvqh2d/nba3_pvqh2d_c_scale,w_1024.jpg"
+					alt="nba3" style="width:100%">
+  				<!-- <div class="text">Caption Two</div> -->
+			</div>
+			<div class="mySlides fade">
+  				<div class="numbertext">3 / 3</div>
+				<img 
+				sizes="(max-width: 1400px) 100vw, 1400px"
+				srcset="
+				images/nfl2_zichnh/nfl2_zichnh_c_scale,w_200.jpg 200w,
+				images/nfl2_zichnh/nfl2_zichnh_c_scale,w_415.jpg 415w,
+				images/nfl2_zichnh/nfl2_zichnh_c_scale,w_575.jpg 575w,
+				images/nfl2_zichnh/nfl2_zichnh_c_scale,w_702.jpg 702w,
+				images/nfl2_zichnh/nfl2_zichnh_c_scale,w_842.jpg 842w,
+				images/nfl2_zichnh/nfl2_zichnh_c_scale,w_948.jpg 948w,
+				images/nfl2_zichnh/nfl2_zichnh_c_scale,w_1061.jpg 1061w,
+				images/nfl2_zichnh/nfl2_zichnh_c_scale,w_1172.jpg 1172w,
+				images/nfl2_zichnh/nfl2_zichnh_c_scale,w_1269.jpg 1269w,
+				images/nfl2_zichnh/nfl2_zichnh_c_scale,w_1375.jpg 1375w,
+				images/nfl2_zichnh/nfl2_zichnh_c_scale,w_1400.jpg 1400w"
+				src="images/nfl2_zichnh/nfl2_zichnh_c_scale,w_1400.jpg"
+				alt="nfl2" style="width:100%">
+					<!-- <div class="text">Caption Two</div> -->
+			</div>
+		</div>
+		<br>
+		<div style="text-align:center">
+		  	<span class="dot"></span> 
+		  	<span class="dot"></span> 
+			  <span class="dot"></span> 
+		</div>
+	</header>
+	<nav id="navigationWapper">
+<!-- 	<ul class="abc" id="ab"> -->
+		<a href="index.html">NFL</a>
+		<a id="active1" href="nba.html">NBA</a>
+		<a href="contactUs.html">Contact us</a>
+<!-- 	</ul> -->		
+	</nav>
+	<div id="websname">
+		<h1>THE SPORTS CASTLE</h1>		
+	</div>
+	<div id="PosterOne">
+		<img
+			sizes="(max-width: 1199px) 100vw, 1199px"
+			srcset="
+			images/ksa3dQN_nmciif/ksa3dQN_nmciif_c_scale,w_200.jpg 200w,
+			images/ksa3dQN_nmciif/ksa3dQN_nmciif_c_scale,w_443.jpg 443w,
+			images/ksa3dQN_nmciif/ksa3dQN_nmciif_c_scale,w_616.jpg 616w,
+			images/ksa3dQN_nmciif/ksa3dQN_nmciif_c_scale,w_765.jpg 765w,
+			images/ksa3dQN_nmciif/ksa3dQN_nmciif_c_scale,w_926.jpg 926w,
+			images/ksa3dQN_nmciif/ksa3dQN_nmciif_c_scale,w_1065.jpg 1065w,
+			images/ksa3dQN_nmciif/ksa3dQN_nmciif_c_scale,w_1197.jpg 1197w,
+			images/ksa3dQN_nmciif/ksa3dQN_nmciif_c_scale,w_1199.jpg 1199w"
+			src="images/ksa3dQN_nmciif/ksa3dQN_nmciif_c_scale,w_1199.jpg"
+			alt="nbaposter">		
+	</div>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<div id="teamResults">
+		<div class="trialTxt">
+	
+			<p><b>Want to know more about your favourite team this NBA season. Click below...</b>
+			</p>
+		</div>
+		<div id="trialImg">
+			<img
+			sizes="(max-width: 614px) 100vw, 614px"
+			srcset="
+			images/nba6_jgtes5/nba6_jgtes5_c_scale,w_200.jpg 200w,
+			images/nba6_jgtes5/nba6_jgtes5_c_scale,w_614.jpg 614w"
+			src="images/nba6_jgtes5/nba6_jgtes5_c_scale,w_614.jpg"
+			alt="nba6">
+		</div>			
+	</div>
+	<div id="teamRstl">
+		<button id="btn1">press here</button>
+		<div id="slctn">
+			<select id="slct1" onchange="getSelectedValue1();">
+				<option value="0">Team</option>
+				<option value="ATL">Atlanta Hawks</option>
+				<option value="BKN">Brooklyn Nets</option>
+				<option value="BOS">Boston Celtics</option>
+				<option value="CHA">Charlotte Hornets</option>
+				<option value="CHI">Chicago Bulls</option>
+				<option value="CLE">Cleveland Cavaliers</option>
+				<option value="DAL">Dallas Mavericks</option>
+				<option value="DEN">Denver Broncos</option>
+				<option value="DET">Detroit Pistons</option>
+				<option value="GSW">Golden State Warriors</option>
+				<option value="HOU">Houston Rockets</option>
+				<option value="IND">Indiana Pacers</option>
+				<option value="LAC">Los Angeles Clippers</option>
+				<option value="LAL">Los Angeles Lakers</option>
+				<option value="MEM">Memphis Grizzlies</option>
+				<option value="MIA">Miami Heat</option>
+				<option value="MIL">Milwaukee Bucks</option>
+				<option value="MIN">Minnesota Timberwolves</option>
+				<option value="NOP">New Orleans Pelicans</option>
+				<option value="NYK">New York Knicks</option>
+				<option value="OKC">Oklahoma City Thunder</option>
+				<option value="ORL">Orlando Magic</option>
+				<option value="PHI">Philadelphia 76ers</option>
+				<option value="PHX">Phoenix Suns</option>
+				<option value="POR">Portland Trail Blazers</option>
+				<option value="SAC">Sacramento Kings</option>
+				<option value="SAS">San Antonio Spurs</option>
+				<option value="TOR">Toronto Raptorss</option>
+				<option value="UTA">Utah Jazz</option>
+				<option value="WAS">Washington Wizards</option>
+			</select>
+			<select id="slct2"  onchange="getSelectedValue2();">
+				<option value="0">Year</option>
+				<option value="2015">2015</option>
+				<option value="2016">2016</option>
+				<option value="2017">2017</option>
+			</select>
+			<select id="slct3" onchange="getSelectedValue3();">
+				<option value="0">Month</option>
+				<option value="1">january</option>
+				<option value="2">february</option>
+				<option value="3">march</option>
+				<option value="4">april</option>
+				<option value="5">may</option>
+				<option value="6">june</option>
+				<!-- <option value="7">july</option>
+				<option value="8">august</option>
+				<option value="9">september</option> -->
+				<option value="10">october</option>
+				<option value="11">november</option>
+				<option value="12">december</option>
+			</select>
+			<button id="n" type="submit" >GO</button>
+		</div>
+	</div>
+	<!-- </div> -->
+				
+	<div  id="nflPlayer">
+		<div>
+			<img
+				sizes="(max-width: 500px) 100vw, 500px"
+				srcset="
+				images/nba5_o0un1x/nba5_o0un1x_c_scale,w_200.jpg 200w,
+				images/nba5_o0un1x/nba5_o0un1x_c_scale,w_500.jpg 500w"
+				src="images/nba5_o0un1x/nba5_o0un1x_c_scale,w_500.jpg"
+				alt="nba5">
+		</div>
+		<div id="nflPlayerTxt">
+			<p><b>To know more about any NBA player, click below...</b>
+			</p>
+		</div>
+	</div>
+	<div id="playerrslt">
+		<button id="btn2">press here</button>
+			<div id="slctn1">
+				<!-- <form > -->
+				<input type="text" placeholder="First Name.." name="search" id="firstname">
+				<input type="text" placeholder="Last Name.." name="search" id="lastname">
+				<button type="submit" id="submiit">submit</button>
+				<!-- </form> -->
+			</div>
+	</div>
+	<footer>
+		<img
+			sizes="(max-width: 1220px) 100vw, 1220px"
+			srcset="
+			images/sports-crowd-website-footer-blue_vadyxa/sports-crowd-website-footer-blue_vadyxa_c_scale,w_200.png 200w,
+			images/sports-crowd-website-footer-blue_vadyxa/sports-crowd-website-footer-blue_vadyxa_c_scale,w_638.png 638w,
+			images/sports-crowd-website-footer-blue_vadyxa/sports-crowd-website-footer-blue_vadyxa_c_scale,w_1015.png 1015w,
+			images/sports-crowd-website-footer-blue_vadyxa/sports-crowd-website-footer-blue_vadyxa_c_scale,w_1220.png 1220w"
+			src="images/sports-crowd-website-footer-blue_vadyxa/sports-crowd-website-footer-blue_vadyxa_c_scale,w_1220.png"
+			alt="footr">
+	</footer>
+
+
+	<script>
+		var slideIndex = 0;
+		showSlides();
+		function showSlides() {
+		    var i;
+		    var slides = document.getElementsByClassName("mySlides");
+		    var dots = document.getElementsByClassName("dot");
+		    for (i = 0; i < slides.length; i++) {
+		       slides[i].style.display = "none";  
+		    }
+		    slideIndex++;
+		    if (slideIndex > slides.length) {slideIndex = 1}    
+		    for (i = 0; i < dots.length; i++) {
+		        dots[i].className = dots[i].className.replace(" active", "");
+		    }
+		    slides[slideIndex-1].style.display = "block";  
+		    dots[slideIndex-1].className += " active";
+		    setTimeout(showSlides, 3000); // Change image every 2 seconds
+		}
+	</script>
+</body>
+</html>
